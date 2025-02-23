@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F0F2F5;
+}
+.header-gradient {
+    background: linear-gradient(to right, #81b3cc, #a7b9cc);
+    padding: 20px 0px;
+}
+.dashboard-container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: none;
+}
