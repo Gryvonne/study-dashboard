@@ -354,7 +354,6 @@ class StudyDashboard:
             button_style = {'display': 'block'} if selected_course else {'display': 'none'}
             if course:
                 info = course.get_info()
-                print(info)
                 pruefungsleistung_info = info['pruefungsleistung'] if info['pruefungsleistung'] else {}
                 time_status, color = course.get_time_status()
                 course_info = html.Div([
@@ -414,7 +413,7 @@ class StudyDashboard:
 
         def get_color(value):
             if value is None:
-                return '#BDC3C7'  # Eine neutrale Farbe für nicht gesetzte Werte
+                return '#BDC3C7'
             if 1 <= value < 1.5:
                 return colors[0]
             elif 1.5 <= value < 2.5:
